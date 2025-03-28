@@ -52,3 +52,40 @@ function fizzbuzz(n) {
  >> Si es mayor de 30, "obese"
  Ejemplo de uso:
  bmc(186, 90); "overweight" */
+
+function bmc(height, weight) {
+  let bmc = weight / (height * height);
+
+  if (bmc <= 18.5) {
+    return "underweight";
+  } else if (bmc <= 25) {
+    return "normal";
+  } else if (bmc <= 30) {
+    return "overweight";
+  } else {
+    return "obese";
+  }
+}
+
+/* 4. Crea una función "max" que reciba 4 números enteros y devuelva el valor
+ del mayor de ellos. NO SE PUEDE USAR Math.max
+ Ejemplo de uso
+ max(10, 15, 100, 40); // 100 */
+
+function max(n1, n2, n3, n4) {
+  let max = n1;
+
+  if (n2 > max) {
+    max = n2;
+  }
+
+  if (n3 > max) {
+    max = n3;
+  }
+
+  if (n4 > max) {
+    max = n4;
+  }
+
+  return max;
+}
